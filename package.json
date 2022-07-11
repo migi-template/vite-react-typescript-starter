@@ -1,7 +1,7 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "<%= name %>",
+  "version": "<%= version %>",
   "private": true,
-  "version": "0.0.0",
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
