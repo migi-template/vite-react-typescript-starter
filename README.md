@@ -1,1 +1,3 @@
-## vite-react-ts-starter
+## <%= name %>
+
+> <%= description %>
