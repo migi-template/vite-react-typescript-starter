@@ -1,9 +1,18 @@
-function App() {
+import { RecoilRoot } from "recoil";
+import { HashRouter } from "react-router-dom";
+import CustomRoutes from "@/routes";
+import { AuthProvider } from "@/context/auth";
+
+const App = () => {
   return (
-    <div className="App">
-      <h1 className="mt-20">Vite + React</h1>
-    </div>
+    <RecoilRoot>
+      <HashRouter>
+        <AuthProvider>
+          <CustomRoutes />
+        </AuthProvider>
+      </HashRouter>
+    </RecoilRoot>
   );
-}
+};
 
 export default App;
